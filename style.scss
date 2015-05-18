@@ -84,44 +84,117 @@ h6 {
 	font-weight: 700;
 }
 
-p {
-	margin-bottom: 1.6em;
-}
-
 $menu:2rem;
 
 /* GENERAL */
 $gris: rgb(200,200,200);
 $blanco: rgb(255,255,255);
-
+$negro_oscuro: rgb(17,17,17);
+$negro_claro: rgb(22,22,22);
+$amarillo: rgb(199,156,52);
+$azul: rgb(10,19,56);
 
 body{background:$gris;}
 
-#main{
+.main{
 	position:relative;
-	width:960px;
+	width:70%;
 	margin:auto;
 }
+
+a{text-decoration:none;}
 
 /* GENERAL END */
 
 /* HEADER */
 header{
-	width:25%;
-	position:absolute;
+	width:20%;
+    height:600px;
+    position:absolute;
 	top:0;
 	left:0;
+    z-index:100;
 
 	li a{
 		font-size:$menu;
 		font-weight:bold;
 		color:$blanco;
-	}
+	
+        &:hover{
+            color:$azul;
+        }
+    }
 }
 
 /* HEADER END */
 
 /* FOOTER */
+$altura_footer:300px;
+$altura_copyr:50px;
+$altura_item_footer: $altura_footer - $altura_copyr;
 
+footer{
+    width:100%;
+    height:$altura_footer;
+    background:$negro_oscuro;
+    clear:both;
+    
+    #logo-footer{
+        width:$altura_item_footer;
+        height:$altura_item_footer;
+        float:left;
+        background:url('imagenes/logo-footer.png') center center;
+    }
 
+    #nav-footer{
+        padding:30px 10px;
+        width:$altura_item_footer - 20px;
+        height:$altura_item_footer - 60px;
+        float:left;
+
+        a{
+            color:$blanco;
+
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+    }
+
+    #redes-footer{
+        float:right;
+        width:$altura_item_footer;
+        height:$altura_item_footer;
+    }
+    
+    #copyr{
+        height:$altura_copyr;
+        width:100%;
+        clear:both;
+        line-height:$altura_copyr;
+    }
+}
 /* FOOTER END */
+
+/* HOME */
+
+#home-banner{
+    width:60%;
+    height:600px;
+    float:left;
+    margin-left:20%;
+    background:rgb(30,30,30);
+}
+
+#presentaciones{
+    float:left;
+    width:20%;
+    height:600px;
+    background:rgb(150,150,150);
+}
+
+/* HOME END */
+
+/* ESCRITOS */
+
+/* ESCRITOS END */
