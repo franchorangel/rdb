@@ -6,6 +6,7 @@
 	<?php wp_head(); ?>
 	<title>Ricardo Del Bufalo</title>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="main">

@@ -8,7 +8,7 @@ Version: 1.0
 */
 
 /* Reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, applet, h1, h2, h3, h4, h5, h6, p, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	font-family: inherit;
 	font-size: 100%;
@@ -38,27 +38,9 @@ html {
 	box-sizing: inherit;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section {
-	display: block;
-}
-
 ol,
 ul {
 	list-style: none;
-}
-
-table {
-	border-collapse: separate;
-	border-spacing: 0;
 }
 
 /* Tipografia */
@@ -100,6 +82,7 @@ body{background:$gris;}
 	position:relative;
 	width:70%;
 	margin:auto;
+    min-width:960px;//Debe ser mayor
 }
 
 a{text-decoration:none;}
@@ -118,16 +101,25 @@ header{
     #logo{
         width:100%;
         height:200px;
+        margin-bottom:130px;
         background:url('imagenes/logo-header.png') center center no-repeat;
     }
     
+    ul{
+        margin-left:10%;
+    }
+
+    ul, li, a{line-height:1;}
+
     li a{
 		font-size:$menu;
-		font-weight:bold;
+		font-weight:600;
 		color:$blanco;
-	
+        display:block;
+            
         &:hover{
             color:$azul;
+            cursor:pointer;
         }
     }
 }
@@ -181,6 +173,52 @@ footer{
     }
 }
 /* FOOTER END */
+
+/* SECCION DE CONTENIDO ALEATORIO */
+.wrapper-contenido-aleatorio{
+    width:100%;
+    background:$negro_claro;
+    clear:both;
+}
+
+#contenido-aleatorio{
+    width:960px;
+    background:$negro_claro;
+    height:960px;
+    clear:both;
+    margin:auto;
+
+    .ppal{
+        width:23%;
+        height:23%;
+        margin:1%;
+        float:left;
+    }
+    
+    .tweet{
+        border-radius:50%;
+        background:$amarillo;
+    }
+    
+    .audio{
+        border-radius:50%;
+        background:$blanco;
+    }
+    
+    .video{
+        background:rgb(50,50,50);
+    }
+    
+    .galeria{
+        background:rgb(80,80,80);
+    }
+
+    .post{
+        background:$blanco;
+    }
+}
+
+/* SECCION DE CONTENIDO ALEATORIO END */
 
 /* HOME */
 
