@@ -69,7 +69,7 @@ h6 {
 $menu:2rem;
 
 /* GENERAL */
-$gris: rgb(200,200,200);
+$gris: rgb(190,190,190);
 $blanco: rgb(255,255,255);
 $negro_oscuro: rgb(17,17,17);
 $negro_claro: rgb(22,22,22);
@@ -92,6 +92,7 @@ a{text-decoration:none;}
 /* HEADER */
 header{
 	width:20%;
+    min-width:200px;
     height:600px;
     position:absolute;
 	top:0;
@@ -122,6 +123,19 @@ header{
             cursor:pointer;
         }
     }
+
+    .redes{
+        float:left;
+        width:35px;
+        height:35px;
+        margin:0 5px;
+        margin-top:30px;
+    }
+    
+    .ih{background:url('imagenes/ih.png'); background-size:35px; margin-left:10%;}
+    .th{background:url('imagenes/th.png'); background-size:35px;}
+    .fh{background:url('imagenes/fh.png'); background-size:35px;}
+    .yh{background:url('imagenes/yh.png'); background-size:35px;}
 }
 
 /* HEADER END */
@@ -141,7 +155,7 @@ footer{
         width:$altura_item_footer;
         height:$altura_item_footer;
         float:left;
-        background:url('imagenes/logo-footer.png') center center;
+        background:url('imagenes/logo-footer.png') center center no-repeat;
     }
 
     #nav-footer{
@@ -163,6 +177,19 @@ footer{
         float:right;
         width:$altura_item_footer;
         height:$altura_item_footer;
+        
+        .redes{
+            float:left;
+            width:45px;
+            height:45px;
+            margin:0 5px;
+            margin-top:100px;
+        }
+
+        .i{background:url('imagenes/i.png');}
+        .t{background:url('imagenes/t.png');}
+        .f{background:url('imagenes/f.png');}
+        .y{background:url('imagenes/y.png');}
     }
     
     #copyr{
@@ -227,7 +254,6 @@ footer{
     height:600px;
     float:left;
     margin-left:20%;
-    background:rgb(30,30,30);
 }
 
 #presentaciones{

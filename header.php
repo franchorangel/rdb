@@ -24,5 +24,11 @@
 			<li><a>CONTACTO</a></li>
 		</ul>
 	</nav>
+  <div id="redes-header">
+    <a href="#"><div class="redes ih"></div></a>
+    <a href="#"><div class="redes th"></div></a>
+    <a href="#"><div class="redes fh"></div></a>
+    <a href="#"><div class="redes yh"></div></a>
+  </div>
 </header>
 </div>

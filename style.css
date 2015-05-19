@@ -61,7 +61,7 @@ h6 {
 
 /* GENERAL */
 body {
-  background: #c8c8c8; }
+  background: #bebebe; }
 
 .main {
   position: relative;
@@ -76,6 +76,7 @@ a {
 /* HEADER */
 header {
   width: 20%;
+  min-width: 200px;
   height: 600px;
   position: absolute;
   top: 0;
@@ -98,6 +99,25 @@ header {
     header li a:hover {
       color: #0a1338;
       cursor: pointer; }
+  header .redes {
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    margin-top: 30px; }
+  header .ih {
+    background: url("imagenes/ih.png");
+    background-size: 35px;
+    margin-left: 10%; }
+  header .th {
+    background: url("imagenes/th.png");
+    background-size: 35px; }
+  header .fh {
+    background: url("imagenes/fh.png");
+    background-size: 35px; }
+  header .yh {
+    background: url("imagenes/yh.png");
+    background-size: 35px; }
 
 /* HEADER END */
 /* FOOTER */
@@ -110,7 +130,7 @@ footer {
     width: 250px;
     height: 250px;
     float: left;
-    background: url("imagenes/logo-footer.png") center center; }
+    background: url("imagenes/logo-footer.png") center center no-repeat; }
   footer #nav-footer {
     padding: 30px 10px;
     width: 230px;
@@ -124,6 +144,20 @@ footer {
     float: right;
     width: 250px;
     height: 250px; }
+    footer #redes-footer .redes {
+      float: left;
+      width: 45px;
+      height: 45px;
+      margin: 0 5px;
+      margin-top: 100px; }
+    footer #redes-footer .i {
+      background: url("imagenes/i.png"); }
+    footer #redes-footer .t {
+      background: url("imagenes/t.png"); }
+    footer #redes-footer .f {
+      background: url("imagenes/f.png"); }
+    footer #redes-footer .y {
+      background: url("imagenes/y.png"); }
   footer #copyr {
     height: 50px;
     width: 100%;
@@ -167,8 +201,7 @@ footer {
   width: 60%;
   height: 600px;
   float: left;
-  margin-left: 20%;
-  background: #1e1e1e; }
+  margin-left: 20%; }
 
 #presentaciones {
   float: left;

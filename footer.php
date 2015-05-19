@@ -15,7 +15,12 @@
       </ul>
     </nav>
   </div>
-  <div id="redes-footer"></div>
+  <div id="redes-footer">
+    <a href="#"><div class="redes i"></div></a>
+    <a href="#"><div class="redes t"></div></a>
+    <a href="#"><div class="redes f"></div></a>
+    <a href="#"><div class="redes y"></div></a>
+  </div>
   <div id="copyr"><p>Todos los derechos reservados</p></div>
 </footer>
 </div>
