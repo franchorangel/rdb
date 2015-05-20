@@ -11,7 +11,7 @@
     $args = array(
       'labels' => $labels,
       'public' => true,
-      'supports' => array( 'title', 'editor', 'custom-fields' ),
+      'supports' => array( 'title' ),
       'has_archive' => true,
     );
 
@@ -118,4 +118,5 @@
 		register_post_type( 'cualquier-vaina', $args );
 	}
 	add_action( 'init', 'rdb_vaina_post' );
+
 ?>

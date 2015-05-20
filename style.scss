@@ -197,6 +197,7 @@ footer{
         width:100%;
         clear:both;
         line-height:$altura_copyr;
+        text-align:center;
     }
 }
 /* FOOTER END */
@@ -225,6 +226,33 @@ footer{
     .tweet{
         border-radius:50%;
         background:$amarillo;
+
+        .t-logo{
+            width:30px;
+            height:30px;
+            margin:auto;
+            margin-top:25px;
+            background:url('imagenes/t-logo.png') center center no-repeat;
+        }
+
+        h2{
+            margin-top:5px;
+            text-align:center;
+            font-size:1.3rem;
+
+            a{
+                color:$blanco;
+
+                &:hover{
+                    text-decoration:underline;
+                }
+            }
+        }
+
+        .t-contenido{
+            text-align:center;
+            padding:10px;
+        }
     }
     
     .audio{
@@ -242,6 +270,19 @@ footer{
 
     .post{
         background:$blanco;
+    
+        .post-wrap{
+            width:82%;
+            height:82%;
+            margin:auto;
+            margin-top:8%;
+            border:1px solid $azul;
+        }
+
+        h1{
+            text-align:center;
+            margin-top:30px;
+        }
     }
 }
 

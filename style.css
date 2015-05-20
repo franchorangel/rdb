@@ -162,7 +162,8 @@ footer {
     height: 50px;
     width: 100%;
     clear: both;
-    line-height: 50px; }
+    line-height: 50px;
+    text-align: center; }
 
 /* FOOTER END */
 /* SECCION DE CONTENIDO ALEATORIO */
@@ -185,6 +186,23 @@ footer {
   #contenido-aleatorio .tweet {
     border-radius: 50%;
     background: #c79c34; }
+    #contenido-aleatorio .tweet .t-logo {
+      width: 30px;
+      height: 30px;
+      margin: auto;
+      margin-top: 25px;
+      background: url("imagenes/t-logo.png") center center no-repeat; }
+    #contenido-aleatorio .tweet h2 {
+      margin-top: 5px;
+      text-align: center;
+      font-size: 1.3rem; }
+      #contenido-aleatorio .tweet h2 a {
+        color: white; }
+        #contenido-aleatorio .tweet h2 a:hover {
+          text-decoration: underline; }
+    #contenido-aleatorio .tweet .t-contenido {
+      text-align: center;
+      padding: 10px; }
   #contenido-aleatorio .audio {
     border-radius: 50%;
     background: white; }
@@ -194,6 +212,15 @@ footer {
     background: #505050; }
   #contenido-aleatorio .post {
     background: white; }
+    #contenido-aleatorio .post .post-wrap {
+      width: 82%;
+      height: 82%;
+      margin: auto;
+      margin-top: 8%;
+      border: 1px solid #0a1338; }
+    #contenido-aleatorio .post h1 {
+      text-align: center;
+      margin-top: 30px; }
 
 /* SECCION DE CONTENIDO ALEATORIO END */
 /* HOME */
