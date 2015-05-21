@@ -18,7 +18,6 @@
   <div id="redes-footer">
     <a href="https://www.instagram.com/rdelbufalo" target="_blank"><div class="redes i"></div></a>
     <a href="https://www.twitter.com/rdelbufalo" target="_blank"><div class="redes t"></div></a>
-    <a href="#"><div class="redes f"></div></a>
     <a href="https://www.youtube.com/rdelbufalo" target="_blank"><div class="redes y"></div></a>
   </div>
   <div id="copyr"><p>Todos los derechos reservados</p></div>

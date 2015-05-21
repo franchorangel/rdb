@@ -27,7 +27,6 @@
   <div id="redes-header">
     <a href="https://www.instagram.com/rdelbufalo" target="_blank"><div class="redes ih"></div></a>
     <a href="https://www.twitter.com/rdelbufalo" target="_blank"><div class="redes th"></div></a>
-    <a href="#"><div class="redes fh"></div></a>
     <a href="https://www.youtube.com/rdelbufalo" target="_blank"><div class="redes yh"></div></a>
   </div>
 </header>

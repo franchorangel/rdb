@@ -112,9 +112,6 @@ header {
   header .th {
     background: url("imagenes/th.png");
     background-size: 35px; }
-  header .fh {
-    background: url("imagenes/fh.png");
-    background-size: 35px; }
   header .yh {
     background: url("imagenes/yh.png");
     background-size: 35px; }
@@ -154,8 +151,6 @@ footer {
       background: url("imagenes/i.png"); }
     footer #redes-footer .t {
       background: url("imagenes/t.png"); }
-    footer #redes-footer .f {
-      background: url("imagenes/f.png"); }
     footer #redes-footer .y {
       background: url("imagenes/y.png"); }
   footer #copyr {
