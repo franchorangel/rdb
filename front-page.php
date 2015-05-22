@@ -59,7 +59,13 @@
     <?php endif; ?>
     <?php if ( $counter == 4 ) : ?>
       <div id="bio-home" class="ppal">
-        Colocar estracto de bio y link a pagina
+        <div id="bio-texto-home">
+        <?php 
+            $page = get_page_by_title( 'Bio' );
+            echo $page->post_excerpt; 
+        ?> 
+        </div>
+        <a href="<?php echo get_page_link($page->ID); ?>">Leer Más</a> 
       </div>
     <?php endif; ?>  
     <?php $counter = $counter + 1; ?>
@@ -67,7 +73,7 @@
     <div id="contrataciones-home">
       <h1>Contrataciones</h1>
       <h2>Mail</h2>
-      <a href="mailto:rdelbufalo@gmail.com">rdelbufalo@gmail.com</a>
+      <a href="mailto:rdelbufalo@gmail.com">@gmail.com</a>
       <h2>Telefonos</h2>
       <p>+58 414 555 5555 | +58 414 555 5555</p> 
     </div>

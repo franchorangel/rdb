@@ -210,12 +210,12 @@ footer {
   #contenido-aleatorio .galeria {
     background: #505050; }
   #contenido-aleatorio .post {
-    background: white; }
+    background: #c8c8c8; }
     #contenido-aleatorio .post .post-wrap {
       width: 86%;
       height: 86%;
       margin: auto;
-      margin-top: 6%;
+      margin-top: 15px;
       border: 1px solid #0a1338; }
     #contenido-aleatorio .post .icono-escrito {
       width: 20px;

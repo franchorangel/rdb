@@ -70,6 +70,7 @@ $menu:2rem;
 
 /* GENERAL */
 $gris: rgb(190,190,190);
+$gris_claro: rgb(200,200,200);
 $blanco: rgb(255,255,255);
 $negro_oscuro: rgb(17,17,17);
 $negro_claro: rgb(22,22,22);
@@ -271,13 +272,13 @@ footer{
     }
 
     .post{
-        background:$blanco;
+        background:$gris_claro;
     
         .post-wrap{
             width:86%;
             height:86%;
             margin:auto;
-            margin-top:6%;
+            margin-top:15px;
             border:1px solid $azul;
         }
         
