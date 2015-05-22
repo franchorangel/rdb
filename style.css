@@ -182,10 +182,10 @@ footer {
     border-radius: 50%;
     background: #c79c34; }
     #contenido-aleatorio .tweet .t-logo {
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
       margin: auto;
-      margin-top: 25px;
+      margin-top: 32px;
       background: url("imagenes/t-logo.png") center center no-repeat; }
     #contenido-aleatorio .tweet h2 {
       margin-top: 5px;
@@ -197,7 +197,11 @@ footer {
           text-decoration: underline; }
     #contenido-aleatorio .tweet .t-contenido {
       text-align: center;
-      padding: 10px; }
+      padding: 20px;
+      padding-top: 8px;
+      padding-bottom: 10px;
+      font-size: 1.2rem;
+      color: white; }
   #contenido-aleatorio .audio {
     border-radius: 50%;
     background: white; }
@@ -233,6 +237,17 @@ footer {
 
 /* HOME END */
 /* BIO */
+#fill {
+  float: left;
+  width: 20%;
+  min-width: 200px;
+  height: 800px; }
+
+#contenido-bio {
+  float: left;
+  width: 78%;
+  padding: 5%; }
+
 /* BIO END */
 /* ESCRITOS */
 /* ESCRITOS END */

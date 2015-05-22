@@ -28,7 +28,7 @@
       <div class="ppal tweet">
         <div class="t-logo"></div>
         <h2><a href="https://www.twitter.com/rdelbufalo">@RDelBufalo</a></h2>
-        <div class="t-contenido"><?php the_title(); ?></div>
+        <div class="t-contenido"><span>"</span><?php the_title(); ?><span>"<span></div>
       </div>
     <?php elseif ( $tipo == 'audio' ) : ?> 
       <div class="ppal audio">
@@ -49,8 +49,8 @@
         </div>
       </div>
     <?php endif; ?>
-    <?php if ( $counter == 5 ) : ?>
-      <div id="bio-home">
+    <?php if ( $counter == 4 ) : ?>
+      <div id="bio-home" class="ppal">
         Colocar estracto de bio y link a pagina
       </div>
     <?php endif; ?>  
