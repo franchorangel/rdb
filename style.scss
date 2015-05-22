@@ -274,22 +274,58 @@ footer{
         background:$blanco;
     
         .post-wrap{
-            width:82%;
-            height:82%;
+            width:86%;
+            height:86%;
             margin:auto;
-            margin-top:8%;
+            margin-top:6%;
             border:1px solid $azul;
+        }
+        
+        .icono-escrito{
+            width:20px;
+            height:20px;
+            margin:auto;
+            margin-top:20px;
+            background:url('imagenes/icono-escritos.png') center center no-repeat;;
         }
 
         h1{
             text-align:center;
-            margin-top:30px;
+            color:$azul;
+            font-weight:700;
         }
+
+        .table-escrito{
+            display:table;
+            height:110px;
+            width:100%;
+            padding:3% 10%;
+            padding-bottom:2%;
+        }
+
+        .cell-escrito{
+            display:table-cell;
+            vertical-align:middle;
+        }
+        .link-escrito{
+            text-align:center;
+
+            a{
+                color:$azul;
+                font-size:1.1rem;
+
+                &:hover{
+                    text-decoration:underline;
+                }
+            }
+        }
+
     }
 
     #bio-home{
         
     }
+    
 }
 
 /* SECCION DE CONTENIDO ALEATORIO END */

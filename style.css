@@ -212,14 +212,37 @@ footer {
   #contenido-aleatorio .post {
     background: white; }
     #contenido-aleatorio .post .post-wrap {
-      width: 82%;
-      height: 82%;
+      width: 86%;
+      height: 86%;
       margin: auto;
-      margin-top: 8%;
+      margin-top: 6%;
       border: 1px solid #0a1338; }
+    #contenido-aleatorio .post .icono-escrito {
+      width: 20px;
+      height: 20px;
+      margin: auto;
+      margin-top: 20px;
+      background: url("imagenes/icono-escritos.png") center center no-repeat; }
     #contenido-aleatorio .post h1 {
       text-align: center;
-      margin-top: 30px; }
+      color: #0a1338;
+      font-weight: 700; }
+    #contenido-aleatorio .post .table-escrito {
+      display: table;
+      height: 110px;
+      width: 100%;
+      padding: 3% 10%;
+      padding-bottom: 2%; }
+    #contenido-aleatorio .post .cell-escrito {
+      display: table-cell;
+      vertical-align: middle; }
+    #contenido-aleatorio .post .link-escrito {
+      text-align: center; }
+      #contenido-aleatorio .post .link-escrito a {
+        color: #0a1338;
+        font-size: 1.1rem; }
+        #contenido-aleatorio .post .link-escrito a:hover {
+          text-decoration: underline; }
 
 /* SECCION DE CONTENIDO ALEATORIO END */
 /* HOME */

@@ -40,12 +40,20 @@
       </div>
     <?php elseif ( $tipo == 'galeria' ) : ?>
       <div class="ppal galeria">
-
+        
       </div>
     <?php elseif ( $tipo == 'post' ) : ?>
       <div class="ppal post">
         <div class="post-wrap">
-          <h1><?php the_title(); ?></h1>
+          <div class="icono-escrito"></div>
+          <div class="table-escrito">
+            <div class="cell-escrito">
+              <h1><?php the_title(); ?></h1>
+            </div>
+          </div>
+          <div class="link-escrito">
+            <a href="<?php get_permalink(); ?>">Leer Más</a>
+          </div>
         </div>
       </div>
     <?php endif; ?>
