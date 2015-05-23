@@ -9,7 +9,10 @@
     ?>
     
     <div class="presentacion">
-
+      <h1><?php the_title(); ?></h1>
+      <h2><?php the_field('lugar'); ?></h2>
+      <h3><?php the_field('fecha'); ?></h3>
+      <h3><?php the_field('hora'); ?></h3>
     </div>
   
     <?php endwhile; wp_reset_postdata(); ?>
