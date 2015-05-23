@@ -67,7 +67,7 @@ body {
   position: relative;
   width: 70%;
   margin: auto;
-  min-width: 960px; }
+  min-width: 1080px; }
 
 a {
   text-decoration: none; }
@@ -168,9 +168,9 @@ footer {
   clear: both; }
 
 #contenido-aleatorio {
-  width: 960px;
+  width: 1080px;
   background: #161616;
-  height: 960px;
+  height: 1080px;
   clear: both;
   margin: auto; }
   #contenido-aleatorio .ppal {
@@ -185,12 +185,12 @@ footer {
       width: 20px;
       height: 20px;
       margin: auto;
-      margin-top: 32px;
+      margin-top: 14%;
       background: url("imagenes/t-logo.png") center center no-repeat; }
     #contenido-aleatorio .tweet h2 {
       margin-top: 5px;
       text-align: center;
-      font-size: 1.3rem; }
+      font-size: 1.4rem; }
       #contenido-aleatorio .tweet h2 a {
         color: white; }
         #contenido-aleatorio .tweet h2 a:hover {
@@ -200,7 +200,7 @@ footer {
       padding: 20px;
       padding-top: 8px;
       padding-bottom: 10px;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: white; }
   #contenido-aleatorio .audio {
     border-radius: 50%;
@@ -215,13 +215,13 @@ footer {
       width: 86%;
       height: 86%;
       margin: auto;
-      margin-top: 15px;
+      margin-top: 7%;
       border: 1px solid #0a1338; }
     #contenido-aleatorio .post .icono-escrito {
       width: 20px;
       height: 20px;
       margin: auto;
-      margin-top: 20px;
+      margin-top: 9%;
       background: url("imagenes/icono-escritos.png") center center no-repeat; }
     #contenido-aleatorio .post h1 {
       text-align: center;
@@ -229,7 +229,7 @@ footer {
       font-weight: 700; }
     #contenido-aleatorio .post .table-escrito {
       display: table;
-      height: 110px;
+      height: 60%;
       width: 100%;
       padding: 3% 10%;
       padding-bottom: 2%; }
@@ -240,9 +240,54 @@ footer {
       text-align: center; }
       #contenido-aleatorio .post .link-escrito a {
         color: #0a1338;
-        font-size: 1.1rem; }
+        font-size: 1.2rem; }
         #contenido-aleatorio .post .link-escrito a:hover {
           text-decoration: underline; }
+  #contenido-aleatorio #bio-home {
+    position: relative; }
+    #contenido-aleatorio #bio-home #bio-texto-home {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 16% 10%;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.78);
+      text-align: center;
+      color: white;
+      font-size: 1.3rem; }
+      #contenido-aleatorio #bio-home #bio-texto-home a {
+        position: absolute;
+        bottom: 10%;
+        width: 100%;
+        text-align: center;
+        z-index: 150;
+        left: 0;
+        color: white;
+        font-size: 1.2rem; }
+        #contenido-aleatorio #bio-home #bio-texto-home a:hover {
+          text-decoration: underline; }
+    #contenido-aleatorio #bio-home img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 50; }
+  #contenido-aleatorio #contrataciones-home {
+    background: #0a0a0a;
+    color: white;
+    text-align: center;
+    padding: 4% 2%;
+    font-size: 1.2rem; }
+    #contenido-aleatorio #contrataciones-home a {
+      color: white; }
+    #contenido-aleatorio #contrataciones-home h2 {
+      font-size: 1.5rem;
+      margin: 2% 0; }
+    #contenido-aleatorio #contrataciones-home hr {
+      margin: 8% 0; }
 
 /* SECCION DE CONTENIDO ALEATORIO END */
 /* HOME */

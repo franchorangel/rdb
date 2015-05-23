@@ -63,19 +63,20 @@
         <?php 
             $page = get_page_by_title( 'Bio' );
             echo $page->post_excerpt; 
-        ?> 
-        </div>
+        ?>
         <a href="<?php echo get_page_link($page->ID); ?>">Leer Más</a> 
+        </div>
+        <img src="<?php echo get_field( 'imagen', $page->ID ) ?>" />
       </div>
     <?php endif; ?>  
     <?php $counter = $counter + 1; ?>
     <?php endwhile; wp_reset_postdata(); ?>
-    <div id="contrataciones-home">
-      <h1>Contrataciones</h1>
-      <h2>Mail</h2>
-      <a href="mailto:rdelbufalo@gmail.com">@gmail.com</a>
-      <h2>Telefonos</h2>
-      <p>+58 414 555 5555 | +58 414 555 5555</p> 
+    <div id="contrataciones-home" class="ppal">
+      <h2>Contrataciones</h2>
+      <a href="mailto:decomediaproducciones@gmail.com">decomediaproducciones@gmail.com</a>
+      <hr />
+      <h2>Telefono</h2>
+      <p>Mariana Egloff<br /> +58 424 240 9076</p> 
     </div>
   </div>
 </div>

@@ -77,13 +77,15 @@ $negro_claro: rgb(22,22,22);
 $amarillo: rgb(199,156,52);
 $azul: rgb(10,19,56);
 
+$main-width:1080px;
+
 body{background:$gris;}
 
 .main{
 	position:relative;
 	width:70%;
 	margin:auto;
-    min-width:960px;//Debe ser mayor
+    min-width:$main-width;
 }
 
 a{text-decoration:none;}
@@ -209,9 +211,9 @@ footer{
 }
 
 #contenido-aleatorio{
-    width:960px;
+    width:$main-width;
     background:$negro_claro;
-    height:960px;
+    height:$main-width;
     clear:both;
     margin:auto;
 
@@ -230,14 +232,14 @@ footer{
             width:20px;
             height:20px;
             margin:auto;
-            margin-top:32px;
+            margin-top:14%;
             background:url('imagenes/t-logo.png') center center no-repeat;
         }
 
         h2{
             margin-top:5px;
             text-align:center;
-            font-size:1.3rem;
+            font-size:1.4rem;
 
             a{
                 color:$blanco;
@@ -253,7 +255,7 @@ footer{
             padding:20px;
             padding-top:8px;
             padding-bottom:10px;
-            font-size:1.2rem;
+            font-size:1.3rem;
             color:$blanco;
         }
     }
@@ -278,7 +280,7 @@ footer{
             width:86%;
             height:86%;
             margin:auto;
-            margin-top:15px;
+            margin-top:7%;
             border:1px solid $azul;
         }
         
@@ -286,7 +288,7 @@ footer{
             width:20px;
             height:20px;
             margin:auto;
-            margin-top:20px;
+            margin-top:9%;
             background:url('imagenes/icono-escritos.png') center center no-repeat;;
         }
 
@@ -298,7 +300,7 @@ footer{
 
         .table-escrito{
             display:table;
-            height:110px;
+            height:60%;
             width:100%;
             padding:3% 10%;
             padding-bottom:2%;
@@ -313,7 +315,7 @@ footer{
 
             a{
                 color:$azul;
-                font-size:1.1rem;
+                font-size:1.2rem;
 
                 &:hover{
                     text-decoration:underline;
@@ -324,7 +326,60 @@ footer{
     }
 
     #bio-home{
+        position:relative;
+
+        #bio-texto-home{
+            position:absolute;
+            width:100%;
+            height:100%;
+            padding:16% 10%;
+            top:0;
+            left:0;
+            z-index:100;
+            background:rgba(0,0,0,0.78);
+            text-align:center;
+            color:$blanco;
+            font-size:1.3rem;
         
+            a{
+                position:absolute;
+                bottom:10%;
+                width:100%;
+                text-align:center;
+                z-index:150;
+                left:0;
+                color:$blanco;
+                font-size:1.2rem;
+
+                &:hover{text-decoration:underline;}
+            }
+        }
+
+        img{
+            position:absolute;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            z-index:50;
+        }
+    }
+
+    #contrataciones-home{
+        background:rgb(10,10,10);
+        color:$blanco;
+        text-align:center;
+        padding:4% 2%;
+        font-size:1.2rem;
+
+        a{color:$blanco;}
+
+        h2{
+            font-size:1.5rem;
+            margin:2% 0;
+        }
+
+        hr{margin:8% 0;}
     }
     
 }
