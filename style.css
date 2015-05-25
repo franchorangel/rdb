@@ -301,7 +301,30 @@ footer {
   float: left;
   width: 20%;
   height: 600px;
-  background: #969696; }
+  padding-top: 40px;
+  text-align: right; }
+  #presentaciones .presentacion {
+    border-bottom: 1px dotted #161616;
+    padding: 12px 0; }
+  #presentaciones h1 {
+    color: #0a1338;
+    font-weight: 700;
+    font-size: 1.8rem; }
+  #presentaciones h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.4rem; }
+  #presentaciones h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.4rem; }
+  #presentaciones a {
+    line-height: 2;
+    padding: 4px 12px;
+    padding-top: 2px;
+    background: #c79c34;
+    color: white;
+    font-style: italic; }
 
 /* HOME END */
 /* BIO */

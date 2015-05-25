@@ -399,7 +399,40 @@ footer{
     float:left;
     width:20%;
     height:600px;
-    background:rgb(150,150,150);
+    padding-top:40px;
+    text-align:right;
+
+    .presentacion{
+        border-bottom:1px dotted $negro_claro;
+        padding:12px 0;
+    }
+
+    h1{
+        color:$azul;
+        font-weight:700;
+        font-size:1.8rem;
+    }
+
+    h3{
+        color:$blanco;
+        font-weight:400;
+        font-size:1.4rem;
+    }
+
+    h2{
+        color:$blanco;
+        font-weight:400;
+        font-size:1.4rem;
+    }
+
+    a{
+        line-height:2;
+        padding:4px 12px;
+        padding-top:2px;
+        background:$amarillo;
+        color:$blanco;
+        font-style:italic;
+    }
 }
 
 /* HOME END */

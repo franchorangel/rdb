@@ -10,9 +10,18 @@
     
     <div class="presentacion">
       <h1><?php the_title(); ?></h1>
+      <h3>
+        <?php //Agregar validacion if ( get_field is fecha set? )
+          $date = DateTime::createFromFormat('Ymd', get_field('fecha')); 
+          echo $date->format('d-m-Y');
+        ?>
+        <span> _ </span>
+        <?php  
+          the_field('hora'); 
+        ?>
+      </h3>
       <h2><?php the_field('lugar'); ?></h2>
-      <h3><?php the_field('fecha'); ?></h3>
-      <h3><?php the_field('hora'); ?></h3>
+      <a href="<?php the_field('link_de_compra'); ?>">Comprar</a>
     </div>
   
     <?php endwhile; wp_reset_postdata(); ?>
