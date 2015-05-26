@@ -327,18 +327,21 @@ footer {
     font-style: italic; }
 
 /* HOME END */
-/* BIO */
 #fill {
   float: left;
   width: 20%;
   min-width: 200px;
-  height: 800px; }
+  height: 600px; }
 
-#contenido-bio {
+#contenido {
   float: left;
   width: 78%;
   padding: 5%; }
+  #contenido h1 {
+    color: white;
+    font-size: 4rem; }
 
+/* BIO */
 /* BIO END */
 /* ESCRITOS */
 /* ESCRITOS END */

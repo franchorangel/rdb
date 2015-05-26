@@ -437,24 +437,33 @@ footer{
 
 /* HOME END */
 
-/* BIO */
-
 #fill{
     float:left;
     width:20%;
     min-width:200px;
-    height:800px;
+    height:600px;
 }
 
-#contenido-bio{
+#contenido{
     float:left;
     width:78%;
     padding:5%;
+
+    h1{
+        color:$blanco;
+        font-size:4rem;
+    }
 }
+
+/* BIO */
+
+
 
 /* BIO END */
 
 /* ESCRITOS */
+
+
 
 /* ESCRITOS END */
 
