@@ -92,7 +92,7 @@
       <h2>Contrataciones</h2>
       <a href="mailto:decomediaproducciones@gmail.com">decomediaproducciones@gmail.com</a>
       <hr />
-      <h2>Telefono</h2>
+      <h2>Teléfono</h2>
       <p>Mariana Egloff<br /> +58 424 240 9076</p> 
     </div>
   </div>
