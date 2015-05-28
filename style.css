@@ -339,7 +339,10 @@ footer {
   padding: 5%; }
   #contenido h1 {
     color: white;
-    font-size: 4rem; }
+    font-size: 4rem;
+    line-height: 1; }
+  #contenido h3 {
+    margin-bottom: 20px; }
 
 /* BIO */
 /* BIO END */
