@@ -11,9 +11,14 @@
     <div class="presentacion">
       <h1><?php the_title(); ?></h1>
       <h3>
-        <?php //Agregar validacion if ( get_field is fecha set? )
-          $date = DateTime::createFromFormat('Ymd', get_field('fecha')); 
-          echo $date->format('d-m-Y');
+        <?php
+          $fecha = get_field('fecha');
+          if( $fecha ){
+            $date = DateTime::createFromFormat('Ymd', $fecha ); 
+            echo $date->format('d-m-Y');
+          } else {
+            echo 'No hay una fecha fijada';
+          }
         ?>
         <span> _ </span>
         <?php  
@@ -87,7 +92,7 @@
       <h2>Contrataciones</h2>
       <a href="mailto:decomediaproducciones@gmail.com">decomediaproducciones@gmail.com</a>
       <hr />
-      <h2>Telefono</h2>
+      <h2>Teléfono</h2>
       <p>Mariana Egloff<br /> +58 424 240 9076</p> 
     </div>
   </div>
