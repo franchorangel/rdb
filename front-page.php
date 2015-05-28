@@ -64,7 +64,7 @@
             </div>
           </div>
           <div class="link-escrito">
-            <a href="<?php get_permalink(); ?>">Leer Más</a>
+            <a href="<?php echo get_permalink(); ?>">Leer Más</a>
           </div>
         </div>
       </div>
