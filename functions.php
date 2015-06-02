@@ -79,6 +79,26 @@
 		register_post_type( 'video', $args );
 	}
 	add_action( 'init', 'rdb_videos_post' );
+	
+	function rdb_standup_post() 
+	{
+		$labels = array(
+			'name' => 'Stand-Up',
+			'singular_name' => 'Stand-Up',
+			'menu_name' => 'Stand-Up',
+		);
+
+		$args = array(
+			'labels' => $labels,
+			'public' => true,
+			'supports' => array( 'title', 'editor' ),
+			'has_archive' => true,
+			'taxonomies' => array( 'category' ),
+		);
+
+		register_post_type( 'standup', $args );
+	}
+	add_action( 'init', 'rdb_standup_post' );
 
 	function rdb_galeria_post()
 	{
