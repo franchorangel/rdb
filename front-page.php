@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 <div class="main">
-  <div id="home-banner"></div>
+  <div id="home-banner">
+    <img src="<?php echo the_field('fondo-home'); ?>" alt="Ricardo Del Bufalo" />
+  </div>
   <div id="presentaciones">
     <?php 
       $args = array( 'post_type' => 'presentaciones' );

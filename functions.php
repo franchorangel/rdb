@@ -119,5 +119,4 @@
 		register_post_type( 'cualquier-vaina', $args );
 	}
 	add_action( 'init', 'rdb_vaina_post' );
-
 ?>
