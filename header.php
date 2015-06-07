@@ -17,6 +17,7 @@
       <li><a href="<?php echo home_url(); ?>">HOME</a></li>
       <li><a href="<?php $page = get_page_by_title('Bio'); echo get_page_link( $page->ID ); ?>">BIO</a></li>
       <li><a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">ESCRITOS</a></li>
+      <li><a href="<?php echo get_post_type_archive_link('standup'); ?>">STAND-UP</a></li>
       <li><a href="<?php echo get_post_type_archive_link('video'); ?>">VIDEOS</a></li>
       <li><a href="<?php echo get_post_type_archive_link('audio'); ?>">AUDIOS</a></li>
       <li><a href="<?php echo get_post_type_archive_link('galeria'); ?>">GALERIA</a></li>

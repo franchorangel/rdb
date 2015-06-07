@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <div class="main">
   <div id="home-banner">
-    <img src="<?php echo the_field('fondo-home'); ?>" alt="Ricardo Del Bufalo" />
+    <?php if ( get_field('fondo_home') ) : ?>
+      <img src="<?php the_field('fondo_home'); ?>" alt="Ricardo Del Bufalo" />
+    <?php endif; ?>
   </div>
   <div id="presentaciones">
     <?php 

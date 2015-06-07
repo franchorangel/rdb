@@ -7,6 +7,7 @@
         <li><a href="<?php echo home_url(); ?>">Home</a></li>
         <li><a href="<?php $page = get_page_by_title('Bio'); echo get_page_link( $page->ID ); ?>">Bio</a></li>
         <li><a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">Escritos</a></li>
+        <li><a href="<?php echo get_post_type_archive_link('standup'); ?>">Stand-Up</a></li>
         <li><a href="<?php echo get_post_type_archive_link('video'); ?>">Videos</a></li>
         <li><a href="<?php echo get_post_type_archive_link('audio'); ?>">Audios</a></li>
         <li><a href="<?php echo get_post_type_archive_link('galeria'); ?>">Galeria</a>
@@ -20,7 +21,7 @@
     <a href="https://www.twitter.com/rdelbufalo" target="_blank"><div class="redes t"></div></a>
     <a href="https://www.youtube.com/rdelbufalo" target="_blank"><div class="redes y"></div></a>
   </div>
-  <div id="copyr"><p>Todos los derechos reservados</p></div>
+  <div id="copyr"><p>Todos los derechos reservados. Página web desarrollada y mantenida por <a href="http://www.movatic.com">Movatic</a></p></div>
 </footer>
 </div>
 <?php wp_footer(); ?>
