@@ -40,7 +40,7 @@
   <div id="contenido-aleatorio">
     <?php
       $counter = 1;
-      $args = array( 'post_type' => array( 'tweets', 'audio', 'video', 'galeria', 'post' ), 'category_name' => 'home', 'orderby' => 'rand', 'posts_per_page' => 13 );
+      $args = array( 'post_type' => array( 'tweets', 'audio', 'video', 'galeria', 'post', 'standup' ), 'category_name' => 'home', 'orderby' => 'rand', 'posts_per_page' => 13 );
       $query_ppal = new WP_Query( $args );
       while ( $query_ppal->have_posts() ) : $query_ppal->the_post(); 
       
@@ -54,6 +54,10 @@
     <?php elseif ( $tipo == 'audio' ) : ?> 
       <div class="ppal audio">
       
+      </div>
+    <?php elseif ( $tipo == 'standup' ) : ?>
+      <div class="ppal video">
+
       </div>
     <?php elseif ( $tipo == 'video' ) : ?>
       <div class="ppal video">

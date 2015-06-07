@@ -9,7 +9,10 @@
       <p><?php the_excerpt(); ?></p>
       <a href="<?php the_permalink(); ?>">Seguir Leyendo</a>
     </div>
-  <?php endwhile; else: ?>
+  <?php endwhile; ?>
+  <?php next_posts_link('Anteriores'); ?>
+  <?php previous_posts_link('Siguientes'); ?>
+  <?php else: ?>
     <p>Nada que mostrar</p>
   <?php endif; ?>
 </div>
