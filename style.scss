@@ -260,6 +260,9 @@ footer{
             padding-bottom:10px;
             font-size:1.3rem;
             color:$blanco;
+            display: table-cell;
+            vertical-align: middle;
+            height: 100px;
         }
     }
     

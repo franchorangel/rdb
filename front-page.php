@@ -9,7 +9,7 @@
     <?php 
       $args = array( 'post_type' => 'presentaciones' );
       $query_presentaciones = new WP_Query( $args );
-      while( $query_presentaciones->have_posts() ) : $query_presentaciones->the_post();
+      if ( $query_presentaciones->have_posts() ) : while( $query_presentaciones->have_posts() ) : $query_presentaciones->the_post();
     ?>
     
     <div class="presentacion">
@@ -25,15 +25,15 @@
           }
         ?>
         <span> _ </span>
-        <?php  
-          the_field('hora'); 
+        <?php
+          if( get_field('hora') ) { the_field('hora'); }
         ?>
       </h3>
-      <h2><?php the_field('lugar'); ?></h2>
-      <a href="<?php the_field('link_de_compra'); ?>">Comprar</a>
+      <h2><?php if ( get_the_field('lugar') ) { the_field('lugar'); } ?></h2>
+      <a href="<?php if ( get_the_field('link_de_compra') ) { the_field('link_de_compra'); } ?>">Comprar</a>
     </div>
   
-    <?php endwhile; wp_reset_postdata(); ?>
+    <?php endwhile; wp_reset_postdata(); endif;?>
   </div>
 </div>
 <div class="wrapper-contenido-aleatorio">
@@ -42,26 +42,26 @@
       $counter = 1;
       $args = array( 'post_type' => array( 'tweets', 'audio', 'video', 'galeria', 'post', 'standup' ), 'category_name' => 'home', 'orderby' => 'rand', 'posts_per_page' => 13 );
       $query_ppal = new WP_Query( $args );
-      while ( $query_ppal->have_posts() ) : $query_ppal->the_post(); 
+      if ( $query_ppal->have_posts() ) : while ( $query_ppal->have_posts() ) : $query_ppal->the_post(); 
       
       $tipo = get_post_type(); ?>
     <?php if ( $tipo == 'tweets' ) : ?>
       <div class="ppal tweet">
         <div class="t-logo"></div>
         <h2><a href="https://www.twitter.com/rdelbufalo">@RDelBufalo</a></h2>
-        <div class="t-contenido"><span>"</span><?php the_title(); ?><span>"<span></div>
+        <div class="t-contenido"><span>"</span><?php the_title(); ?><span>"</span></div>
       </div>
     <?php elseif ( $tipo == 'audio' ) : ?> 
       <div class="ppal audio">
-      
+        
       </div>
     <?php elseif ( $tipo == 'standup' ) : ?>
       <div class="ppal video">
-
+        <img src="<?php // get standup thumbnail ?>" alt="Stand-Up" />
       </div>
     <?php elseif ( $tipo == 'video' ) : ?>
       <div class="ppal video">
-
+        <img src="<?php // get video thumbnail ?>" alt="Video" />
       </div>
     <?php elseif ( $tipo == 'galeria' ) : ?>
       <div class="ppal galeria">
@@ -91,11 +91,11 @@
         ?>
         <a href="<?php echo get_page_link($page->ID); ?>">Leer Más</a> 
         </div>
-        <img src="<?php echo get_field( 'imagen', $page->ID ) ?>" />
+        <img src="<?php echo get_field( 'imagen', $page->ID ) ?>" alt="Biografía" />
       </div>
     <?php endif; ?>  
     <?php $counter = $counter + 1; ?>
-    <?php endwhile; wp_reset_postdata(); ?>
+    <?php endwhile; wp_reset_postdata(); endif;?>
     <div id="contrataciones-home" class="ppal">
       <h2>Contrataciones</h2>
       <a href="mailto:decomediaproducciones@gmail.com">decomediaproducciones@gmail.com</a>

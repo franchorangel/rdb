@@ -204,7 +204,10 @@ footer {
       padding-top: 8px;
       padding-bottom: 10px;
       font-size: 1.3rem;
-      color: white; }
+      color: white;
+      display: table-cell;
+      vertical-align: middle;
+      height: 100px; }
   #contenido-aleatorio .audio {
     border-radius: 50%;
     background: white; }
