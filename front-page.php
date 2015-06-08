@@ -29,8 +29,8 @@
           if( get_field('hora') ) { the_field('hora'); }
         ?>
       </h3>
-      <h2><?php if ( get_the_field('lugar') ) { the_field('lugar'); } ?></h2>
-      <a href="<?php if ( get_the_field('link_de_compra') ) { the_field('link_de_compra'); } ?>">Comprar</a>
+      <h2><?php if ( get_field('lugar') ) { the_field('lugar'); } ?></h2>
+      <a href="<?php if ( get_field('link_de_compra') ) { the_field('link_de_compra'); } ?>">Comprar</a>
     </div>
   
     <?php endwhile; wp_reset_postdata(); endif;?>
@@ -73,7 +73,7 @@
       </div>
     <?php elseif ( $tipo == 'galeria' ) : ?>
       <div class="ppal galeria">
-        
+        <img src="<?php //get thumbnail ?>" alt="Galería"> 
       </div>
     <?php elseif ( $tipo == 'post' ) : ?>
       <div class="ppal post">
