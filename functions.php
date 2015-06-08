@@ -39,13 +39,13 @@
 		register_post_type( 'tweets', $args );	
 	}
 	add_action( 'init', 'rdb_tweets_post' );
-	
-	function rdb_audios_post() 
+
+    function rdb_standup_post() 
 	{
 		$labels = array(
-			'name' => 'Audios',
-			'singular_name' => 'Audio',
-			'menu_name' => 'Audios',
+			'name' => 'Stand-Up',
+			'singular_name' => 'Stand-Up',
+			'menu_name' => 'Stand-Up',
 		);
 
 		$args = array(
@@ -56,9 +56,9 @@
 			'taxonomies' => array( 'category' ),
 		);
 
-		register_post_type( 'audio', $args );
+		register_post_type( 'standup', $args );
 	}
-	add_action( 'init', 'rdb_audios_post' );
+	add_action( 'init', 'rdb_standup_post' );
 
 	function rdb_videos_post() 
 	{
@@ -80,12 +80,12 @@
 	}
 	add_action( 'init', 'rdb_videos_post' );
 	
-	function rdb_standup_post() 
+		function rdb_audios_post() 
 	{
 		$labels = array(
-			'name' => 'Stand-Up',
-			'singular_name' => 'Stand-Up',
-			'menu_name' => 'Stand-Up',
+			'name' => 'Audios',
+			'singular_name' => 'Audio',
+			'menu_name' => 'Audios',
 		);
 
 		$args = array(
@@ -96,9 +96,9 @@
 			'taxonomies' => array( 'category' ),
 		);
 
-		register_post_type( 'standup', $args );
+		register_post_type( 'audio', $args );
 	}
-	add_action( 'init', 'rdb_standup_post' );
+	add_action( 'init', 'rdb_audios_post' );
 
 	function rdb_galeria_post()
 	{

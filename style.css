@@ -209,8 +209,30 @@ footer {
       vertical-align: middle;
       height: 100px; }
   #contenido-aleatorio .audio {
+    position: relative;
     border-radius: 50%;
-    background: white; }
+    background: white;
+    text-align: center;
+    color: #0a1338; }
+    #contenido-aleatorio .audio h2 {
+      margin-top: 67px;
+      font-size: 1.35rem; }
+    #contenido-aleatorio .audio .table-audio {
+      display: table;
+      height: 36%;
+      width: 100%;
+      padding: 3% 15%;
+      padding-bottom: 2%; }
+    #contenido-aleatorio .audio .cell-audio {
+      display: table-cell;
+      vertical-align: middle; }
+    #contenido-aleatorio .audio .link-audio {
+      text-align: center; }
+      #contenido-aleatorio .audio .link-audio a {
+        color: #0a1338;
+        font-size: 1.2rem; }
+        #contenido-aleatorio .audio .link-audio a:hover {
+          text-decoration: underline; }
   #contenido-aleatorio .video {
     background: #323232; }
   #contenido-aleatorio .galeria {

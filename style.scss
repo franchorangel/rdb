@@ -267,8 +267,41 @@ footer{
     }
     
     .audio{
+        position:relative;
         border-radius:50%;
         background:$blanco;
+        text-align:center;
+        color:$azul;
+
+        h2{
+            margin-top:67px;
+            font-size:1.35rem;
+        }
+
+         .table-audio{
+            display:table;
+            height:36%;
+            width:100%;
+            padding:3% 15%;
+            padding-bottom:2%;
+        }
+
+        .cell-audio{
+            display:table-cell;
+            vertical-align:middle;
+        }
+        .link-audio{
+            text-align:center;
+
+            a{
+                color:$azul;
+                font-size:1.2rem;
+
+                &:hover{
+                    text-decoration:underline;
+                }
+            }
+        }
     }
     
     .video{

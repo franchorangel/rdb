@@ -53,7 +53,15 @@
       </div>
     <?php elseif ( $tipo == 'audio' ) : ?> 
       <div class="ppal audio">
-        
+        <h2>Calma Pueblo</h2>
+        <div class="table-audio">
+          <div class="cell-audio">
+            <h1><?php the_title(); ?></h1>
+          </div>
+        </div>
+        <div class="link-audio">
+          <a href="<?php the_permalink(); ?>">Ir al audio</a>
+        </div>
       </div>
     <?php elseif ( $tipo == 'standup' ) : ?>
       <div class="ppal video">
