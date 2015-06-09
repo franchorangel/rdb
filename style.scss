@@ -504,6 +504,23 @@ footer{
     }
 }
 
+#contenido.bio{
+    img{
+        float: left;
+        border-radius: 50%;
+        border: 5px solid white;
+        margin:6px 0;
+        margin-right: 20px;
+        clear:both;
+    }
+
+    .seccion-bio{
+        width:100%;
+        border-bottom:1px $gris solid;
+        padding: 20px 0;
+    }
+}
+
 /* BIO */
 
 

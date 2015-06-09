@@ -1,5 +1,5 @@
 <style>
-    header > nav > ul > li:nth-child(6) > a {
+    header > nav > ul > li:nth-child(4) > a {
         color: rgb(10,19,56);
     }
 </style>
@@ -12,7 +12,7 @@
       <h1><?php the_title(); ?></h1>
       <h3><?php echo get_the_date(); ?></h3>
       <p><?php the_excerpt(); ?></p>
-      <a href="<?php the_permalink(); ?>">Ir al audio</a>
+      <a href="<?php the_permalink(); ?>">Seguir Leyendo</a>
     </div>
   <?php endwhile; ?>
   <?php next_posts_link('Siguiente'); ?>

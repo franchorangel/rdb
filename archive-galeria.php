@@ -1,5 +1,5 @@
 <style>
-    header > nav > ul > li:nth-child(6) > a {
+    header > nav > ul > li:nth-child(7) > a {
         color: rgb(10,19,56);
     }
 </style>

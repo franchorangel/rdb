@@ -1,3 +1,8 @@
+<style>
+    header > nav > ul > li:nth-child(3) > a {
+        color: rgb(10,19,56);
+    }
+</style>
 <?php get_header(); ?>
 <div class="main">
 <div id="fill"></div>

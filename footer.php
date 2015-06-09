@@ -11,8 +11,8 @@
         <li><a href="<?php echo get_post_type_archive_link('video'); ?>">Videos</a></li>
         <li><a href="<?php echo get_post_type_archive_link('audio'); ?>">Audios</a></li>
         <li><a href="<?php echo get_post_type_archive_link('galeria'); ?>">Galeria</a>
-        <li><a href="#">Cualquier Vaina</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="<?php echo get_post_type_archive_link('cualquier-vaina'); ?>">Cualquier Vaina</a></li>
+        <li><a href="<?php $page_contacto = get_page_by_title( 'Contacto' ); echo get_page_link($page_contacto->ID); ?>">Contacto</a></li>
       </ul>
     </nav>
   </div>
