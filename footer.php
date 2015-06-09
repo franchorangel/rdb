@@ -5,7 +5,7 @@
     <nav>
       <ul>
         <li><a href="<?php echo home_url(); ?>">Home</a></li>
-        <li><a href="<?php $page = get_page_by_title('Bio'); echo get_page_link( $page->ID ); ?>">Bio</a></li>
+        <li><a href="<?php echo get_post_type_archive_link('bio'); ?>">Bio</a></li>
         <li><a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">Escritos</a></li>
         <li><a href="<?php echo get_post_type_archive_link('standup'); ?>">Stand-Up</a></li>
         <li><a href="<?php echo get_post_type_archive_link('video'); ?>">Videos</a></li>

@@ -1,5 +1,6 @@
 <?php
   add_post_type_support( 'page', 'excerpt' );
+  add_theme_support('post-thumbnails');
 
   function rdb_presentaciones_post()
   {
@@ -139,4 +140,24 @@
 		register_post_type( 'cualquier-vaina', $args );
 	}
 	add_action( 'init', 'rdb_vaina_post' );
+
+    function rdb_bio_post()
+	{
+		$labels = array(
+			'name' => 'Bio',
+			'singular_name' => 'Bio',
+			'menu_name' => 'Bio',
+		);
+
+		$args = array(
+			'labels' => $labels,
+			'public' => true,
+			'supports' => array( 'title', 'editor', 'thumbnail' ),
+			'has_archive' => true,
+			'taxonomies' => array( 'category' ),
+		);
+		
+		register_post_type( 'bio', $args );
+	}
+	add_action( 'init', 'rdb_bio_post' );
 ?>

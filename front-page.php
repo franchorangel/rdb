@@ -4,6 +4,11 @@
     <?php if ( get_field('fondo_home') ) : ?>
       <img src="<?php the_field('fondo_home'); ?>" alt="Ricardo Del Bufalo" />
     <?php endif; ?>
+    <div id="home-video-fill">
+    </div>
+    <div id="home-video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OAZNJWdis8E??iv_load_policy=3;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
   <div id="presentaciones">
     <?php 
@@ -97,7 +102,7 @@
             $page = get_page_by_title( 'Bio' );
             echo $page->post_excerpt; 
         ?>
-        <a href="<?php echo get_page_link($page->ID); ?>">Leer Más</a> 
+        <a href="<?php echo get_post_type_archive_link('bio'); ?>">Leer Más</a> 
         </div>
         <img src="<?php echo get_field( 'imagen', $page->ID ) ?>" alt="Biografía" />
       </div>

@@ -75,6 +75,24 @@ a {
 p {
   margin-bottom: 14px; }
 
+#home-video-fill {
+  height: 15%;
+  width: 100%; }
+
+#home-video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
+  #home-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    max-width: 720px; }
+
 /* GENERAL END */
 /* HEADER */
 header {
@@ -375,19 +393,34 @@ footer {
   #contenido h3 {
     margin-bottom: 20px; }
 
-#contenido.bio img {
-  float: left;
-  border-radius: 50%;
-  border: 5px solid white;
-  margin: 6px 0;
-  margin-right: 20px;
-  clear: both; }
-#contenido.bio .seccion-bio {
-  width: 100%;
-  border-bottom: 1px #bebebe solid;
-  padding: 20px 0; }
-
 /* BIO */
+#contenido.bio {
+  padding-bottom: 4%; }
+  #contenido.bio .bio-thumbnail img {
+    border-radius: 50%;
+    border: 5px solid white;
+    clear: both; }
+  #contenido.bio .seccion-bio {
+    width: 100%;
+    border-bottom: 1px #969696 solid;
+    padding: 35px 0;
+    display: table; }
+    #contenido.bio .seccion-bio:last-child {
+      border: none;
+      padding-bottom: 0; }
+  #contenido.bio .bio-thumbnail {
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%;
+    text-align: center; }
+  #contenido.bio .bio-texto {
+    display: table-cell;
+    vertical-align: middle;
+    width: 80%;
+    padding: 0 40px; }
+    #contenido.bio .bio-texto p:last-child {
+      margin: 0; }
+
 /* BIO END */
 /* ESCRITOS */
 .archive-item {

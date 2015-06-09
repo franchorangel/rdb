@@ -92,6 +92,30 @@ a{text-decoration:none;}
 
 p{margin-bottom:14px;}
 
+//temporal por video del home
+
+#home-video-fill{
+    height:15%;
+    width:100%;
+}
+
+#home-video-wrapper{
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:25px;
+    height:0;
+
+    iframe{
+        position:absolute;
+        top:0;
+        left:0;
+        width:90%;
+        height:90%;
+        margin:5%;
+        max-width:720px;
+    }
+}
+
 /* GENERAL END */
 
 /* HEADER */
@@ -504,25 +528,45 @@ footer{
     }
 }
 
+/* BIO */
+
 #contenido.bio{
-    img{
-        float: left;
+    padding-bottom:4%;
+
+    .bio-thumbnail img{
         border-radius: 50%;
         border: 5px solid white;
-        margin:6px 0;
-        margin-right: 20px;
         clear:both;
     }
 
     .seccion-bio{
         width:100%;
-        border-bottom:1px $gris solid;
-        padding: 20px 0;
+        border-bottom:1px rgb(150,150,150) solid;
+        padding: 35px 0;
+        display:table;
+
+        &:last-child{
+            border:none;
+            padding-bottom:0;
+        }
+    }
+
+    .bio-thumbnail{
+        display:table-cell;
+        vertical-align:middle;
+        width:20%;
+        text-align:center;
+    }
+
+    .bio-texto{
+        display:table-cell;
+        vertical-align:middle;
+        width:80%;
+        padding:0 40px;
+
+        p:last-child{margin:0;}
     }
 }
-
-/* BIO */
-
 
 /* BIO END */
 
