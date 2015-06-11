@@ -252,7 +252,24 @@ footer {
         #contenido-aleatorio .audio .link-audio a:hover {
           text-decoration: underline; }
   #contenido-aleatorio .video {
-    background: #323232; }
+    display: table; }
+    #contenido-aleatorio .video .wrapper {
+      display: table-row;
+      width: 100%; }
+    #contenido-aleatorio .video .titulo {
+      display: table-cell;
+      vertical-align: middle;
+      height: 80%;
+      width: 100%;
+      text-align: center;
+      padding: 0 10%;
+      color: white; }
+    #contenido-aleatorio .video .link {
+      width: 60%;
+      height: 10%;
+      margin-left: 20%;
+      text-align: center;
+      border-top: 1px solid white; }
   #contenido-aleatorio .galeria {
     background: #505050; }
   #contenido-aleatorio .post {

@@ -58,7 +58,7 @@
       </div>
     <?php elseif ( $tipo == 'audio' ) : ?> 
       <div class="ppal audio">
-        <h2>Calma Pueblo</h2>
+        <h2><?php if ( get_field( 'programa' ) ) { the_field( 'programa' ); }?></h2>
         <div class="table-audio">
           <div class="cell-audio">
             <h1><?php the_title(); ?></h1>
@@ -69,12 +69,22 @@
         </div>
       </div>
     <?php elseif ( $tipo == 'standup' ) : ?>
-      <div class="ppal video">
-        <img src="<?php // get standup thumbnail ?>" alt="Stand-Up" />
-      </div>
+      <?php if ( has_post_thumbnail() ) : ?>
+        <?php $thumbnail_id = get_post_thumbnail_id(); ?>
+        <div class="ppal video" style="background-image:url(<?php echo wp_get_attachment_url($thumbnail_id) ?>); background-size:cover; background-position:center;">
+            <div class="wrapper">
+                <div class="titulo">
+                    <h1><?php the_title(); ?></h1>
+                </div>
+            </div>
+            <div class="link">
+                <a href="<?php the_permalink(); ?>">Ver video</a>
+            </div>
+        </div>
+      <?php endif; ?>
     <?php elseif ( $tipo == 'video' ) : ?>
       <div class="ppal video">
-        <img src="<?php // get video thumbnail ?>" alt="Video" />
+        <?php if ( has_post_thumbnail() ) { the_post_thumbnail( array(249,249) ); } ?>
       </div>
     <?php elseif ( $tipo == 'galeria' ) : ?>
       <div class="ppal galeria">
