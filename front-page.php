@@ -71,24 +71,39 @@
     <?php elseif ( $tipo == 'standup' ) : ?>
       <?php if ( has_post_thumbnail() ) : ?>
         <?php $thumbnail_id = get_post_thumbnail_id(); ?>
-        <div class="ppal video" style="background-image:url(<?php echo wp_get_attachment_url($thumbnail_id) ?>); background-size:cover; background-position:center;">
-            <div class="wrapper">
-                <div class="titulo">
-                    <h1><?php the_title(); ?></h1>
+        <div class="ppal ppal-video">  
+          <div class="inner-video video" style="background-image:url(<?php echo wp_get_attachment_url($thumbnail_id) ?>); background-size:cover; background-position:center;">
+            </div>
+            <div class="inner-video contenido-video">
+                <div class="wrapper">
+                    <div class="titulo">
+                        <h1><?php the_title(); ?></h1>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="<?php the_permalink(); ?>">Ver video</a>
                 </div>
             </div>
-            <div class="link">
-                <a href="<?php the_permalink(); ?>">Ver video</a>
-            </div>
-        </div>
+          </div>
       <?php endif; ?>
     <?php elseif ( $tipo == 'video' ) : ?>
-      <div class="ppal video">
-        <?php if ( has_post_thumbnail() ) { the_post_thumbnail( array(249,249) ); } ?>
-      </div>
-    <?php elseif ( $tipo == 'galeria' ) : ?>
-      <div class="ppal galeria">
-        <img src="<?php //get thumbnail ?>" alt="Galería"> 
+        <?php if ( has_post_thumbnail() ) :?>
+        <?php $thumbnail_id = get_post_thumbnail_id(); ?>
+          <div class="ppal ppal-video">  
+            <div class="inner-video video" style="background-image:url(<?php echo wp_get_attachment_url($thumbnail_id) ?>); background-size:cover; background-position:center;">
+            </div>
+            <div class="inner-video contenido-video">
+                <div class="wrapper">
+                    <div class="titulo">
+                        <h1><?php the_title(); ?></h1>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="<?php the_permalink(); ?>">Ver video</a>
+                </div>
+            </div>
+          </div>
+      <?php endif; ?>
       </div>
     <?php elseif ( $tipo == 'post' ) : ?>
       <div class="ppal post">

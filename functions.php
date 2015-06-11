@@ -114,7 +114,6 @@
 			'public' => true,
 			'supports' => array( 'title', 'editor' ),
 			'has_archive' => true,
-			'taxonomies' => array( 'category' ),
 		);
 
 		register_post_type( 'galeria', $args );

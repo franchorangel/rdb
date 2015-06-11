@@ -252,24 +252,48 @@ footer {
         #contenido-aleatorio .audio .link-audio a:hover {
           text-decoration: underline; }
   #contenido-aleatorio .video {
-    display: table; }
-    #contenido-aleatorio .video .wrapper {
+    position: relative;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px); }
+  #contenido-aleatorio .ppal-video {
+    position: relative; }
+  #contenido-aleatorio .inner-video {
+    width: 100%;
+    height: 100%; }
+  #contenido-aleatorio .contenido-video {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4); }
+    #contenido-aleatorio .contenido-video .wrapper {
       display: table-row;
       width: 100%; }
-    #contenido-aleatorio .video .titulo {
+    #contenido-aleatorio .contenido-video .titulo {
       display: table-cell;
       vertical-align: middle;
-      height: 80%;
+      height: 78%;
       width: 100%;
       text-align: center;
       padding: 0 10%;
+      padding-top: 8%;
       color: white; }
-    #contenido-aleatorio .video .link {
+    #contenido-aleatorio .contenido-video .link {
       width: 60%;
       height: 10%;
-      margin-left: 20%;
+      padding: 7px 0;
+      margin: auto;
       text-align: center;
       border-top: 1px solid white; }
+      #contenido-aleatorio .contenido-video .link a {
+        color: white;
+        font-size: 1.3rem; }
+        #contenido-aleatorio .contenido-video .link a:hover {
+          text-decoration: underline; }
   #contenido-aleatorio .galeria {
     background: #505050; }
   #contenido-aleatorio .post {

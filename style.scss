@@ -329,7 +329,28 @@ footer{
     }
     
     .video{
+        position:relative;
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(1px);
+        -o-filter: blur(1px);
+        -ms-filter: blur(1px);
+        filter: blur(1px);
+    }
+
+    .ppal-video{position:relative;}
+
+    .inner-video{
+        width:100%;
+        height:100%;
+    }
+
+    .contenido-video{
         display:table;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1000;
+        background:rgba(0,0,0,0.4);
 
         .wrapper{
             display:table-row;
@@ -339,19 +360,28 @@ footer{
         .titulo{
             display:table-cell;
             vertical-align:middle;
-            height:80%;
+            height:78%;
             width:100%;
             text-align:center;
             padding:0 10%;
+            padding-top:8%;
             color:$blanco;
         }
 
         .link{
             width:60%;
             height:10%;
-            margin-left:20%;
+            padding:7px 0;
+            margin:auto;
             text-align:center;
             border-top:1px solid $blanco;
+
+            a{
+                color:$blanco;
+                font-size:1.3rem;
+
+                &:hover{text-decoration:underline;}
+            }
         }
     }
     
