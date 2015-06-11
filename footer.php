@@ -22,6 +22,7 @@
     <a href="https://www.youtube.com/rdelbufalo" target="_blank"><div class="redes y"></div></a>
   </div>
   <div id="copyr"><p>Todos los derechos reservados. Página web desarrollada y mantenida por <a href="http://www.movatic.com">Movatic</a></p></div>
+</div>
 </footer>
 </div>
 <?php wp_footer(); ?>

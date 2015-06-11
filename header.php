@@ -11,7 +11,7 @@
 <body>
 <div class="main">
 <header>
-	<div id="logo"></div>
+	<a href="<?php echo home_url(); ?>"><div id="logo"></div></a>
 	<nav>
 		<ul>
             <li><a href="<?php echo home_url(); ?>">HOME</a></li>

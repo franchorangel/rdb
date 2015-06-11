@@ -11,8 +11,7 @@
     <div class="archive-item">
       <h1><?php the_title(); ?></h1>
       <h3><?php echo get_the_date(); ?></h3>
-      <p><?php the_excerpt(); ?></p>
-      <a href="<?php the_permalink(); ?>">Ir al video</a>
+      <p><?php the_content(); ?></p>
     </div>
   <?php endwhile; ?>
   <?php next_posts_link('Siguiente'); ?>
