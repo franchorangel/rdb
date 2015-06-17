@@ -21,7 +21,7 @@
     <a href="https://www.twitter.com/rdelbufalo" target="_blank"><div class="redes t"></div></a>
     <a href="https://www.youtube.com/rdelbufalo" target="_blank"><div class="redes y"></div></a>
   </div>
-  <div id="copyr"><p>Todos los derechos reservados. Página web desarrollada y mantenida por <a href="http://www.movatic.com">Movatic</a></p></div>
+  <div id="copyr"><p>Todos los derechos reservados. Página web desarrollada y mantenida por <a href="http://www.movatic.com" target="_blank">Movatic</a></p></div>
 </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -29,8 +29,20 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-54925436-3', 'auto');
+  //ga('create', 'UA-54925436-3', 'auto');
+  //ga('send', 'pageview');
+
+  // Main
+  ga('create', 'UA-64149203-1', 'auto');
+
+  // Mov
+  ga('create', 'UA-54925436-3', 'auto', {'name':'mov'});
+
+  // Main
   ga('send', 'pageview');
+
+  // Mov
+  ga('mov.send', 'pageview');
 
 </script>
 </footer>

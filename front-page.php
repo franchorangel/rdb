@@ -35,7 +35,7 @@
         ?>
       </h3>
       <h2><?php if ( get_field('lugar') ) { the_field('lugar'); } ?></h2>
-      <a href="<?php if ( get_field('link_de_compra') ) { the_field('link_de_compra'); } ?>">Comprar</a>
+      <a href="<?php if ( get_field('link_de_compra') ) { the_field('link_de_compra'); } ?>" target="_blank">Comprar</a>
     </div>
   
     <?php endwhile; wp_reset_postdata(); endif;?>
@@ -53,7 +53,7 @@
     <?php if ( $tipo == 'tweets' ) : ?>
       <div class="ppal tweet">
         <div class="t-logo"></div>
-        <h2><a href="https://www.twitter.com/rdelbufalo">@RDelBufalo</a></h2>
+        <h2><a href="https://www.twitter.com/rdelbufalo" target="_blank">@RDelBufalo</a></h2>
         <div class="t-contenido"><span>"</span><?php the_title(); ?><span>"</span></div>
       </div>
     <?php elseif ( $tipo == 'audio' ) : ?> 
@@ -88,7 +88,7 @@
       <?php endif; ?>
     <?php elseif ( $tipo == 'video' ) : ?>
         <?php if ( has_post_thumbnail() ) :?>
-        <?php $thumbnail_id = get_post_thumbnail_id(); ?>
+          <?php $thumbnail_id = get_post_thumbnail_id(); ?>
           <div class="ppal ppal-video">  
             <div class="inner-video video" style="background-image:url(<?php echo wp_get_attachment_url($thumbnail_id) ?>); background-size:cover; background-position:center;">
             </div>
@@ -103,8 +103,7 @@
                 </div>
             </div>
           </div>
-      <?php endif; ?>
-      </div>
+        <?php endif; ?>
     <?php elseif ( $tipo == 'post' ) : ?>
       <div class="ppal post">
         <div class="post-wrap">
