@@ -75,6 +75,10 @@ a {
 p {
   margin-bottom: 14px; }
 
+#video-reg {
+  max-width: 800px;
+  margin: auto; }
+
 #home-video-fill {
   height: 15%;
   width: 100%; }
